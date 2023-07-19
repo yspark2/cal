@@ -1,0 +1,13 @@
+package com.example.mycalculator
+
+class DivideOperation(_num1:Double, _num2:Double){
+    var num1 = _num1
+    var num2 = _num2
+    init {
+        this.num1 = _num1
+        this.num2 = _num2
+    }
+    fun div(){
+        println("결과 값 : ${num1.div(num2)}")
+    }
+}
