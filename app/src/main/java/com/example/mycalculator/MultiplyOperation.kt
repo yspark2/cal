@@ -1,13 +1,14 @@
 package com.example.mycalculator
 
-class MultiplyOperation(_num1:Double, _num2:Double){
-    var num1 = _num1
-    var num2 = _num2
+class MultiplyOperation(num1:Double, num2:Double) : AbstractOperation(){
+    var num1 = num1
+    var num2 = num2
     init {
-        this.num1 = _num1
-        this.num2 = _num2
+        this.num1 = num1
+        this.num2 = num2
     }
-    fun mul(){
-        println("결과 값 : ${num1.times(num2)}")
+    override fun operation() : Double{
+        var result = num1.times(num2)
+        return result
     }
 }
